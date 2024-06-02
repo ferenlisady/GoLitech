@@ -1,0 +1,494 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Audiowide", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: white;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7%;
+    background-color: #F5F5F5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .navbar a{
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    transition: 0.3s ease;
+}
+
+header .navbar a.active::after{
+    content: "";
+    width: 50%;
+    height: 1.5px;
+    background: black;
+    position: absolute;
+    justify-content: space-between;
+    bottom: -4px;
+    left: 20px;
+}
+
+header #toggle{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 2rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 4.5rem;
+}
+
+h1{
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.services{
+    padding-left: 15%;
+}
+
+.services img{
+    width: 13%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #111;
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: .5rem .8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.about-us .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    row-gap: 100px;
+    margin-bottom: 90px;
+}
+
+.about-us.box-container .box{
+    border: 1px solid#cce7d0;
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.05);
+    width: 320px;
+    background: white;
+}
+
+.about-us.box-container .box .image{
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.about-us.box-container .box .image img{
+    height: 100%;
+    width: 70%;
+    margin-left: 50px;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.about-us.box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-us.box-container .box .content h2{
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.about-us.box-container .box .content h1{
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.about-us .box-container p{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    line-height: 130%;
+}
+
+footer {
+    background-color: #111;
+}
+
+.container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social-media{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+.social-media a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+
+.social-media a i{
+    font-size: 2em;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.social-media a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.social-media a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer-col{
+    margin: 30px 0;
+}
+
+.footer-col ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-col ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+
+.bottom{
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.bottom p{
+    color: #fff;
+}
+
+/*desktop*/
+@media (min-width: 1400px){
+    
+    html{
+        font-size: 100%;
+    }
+
+    header{
+        padding: 10px 7%;
+    }
+
+    .footer{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/*tablet*/
+@media (max-width: 820px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2px 3%;
+    }
+
+    header .logo{
+        font-size: 3rem;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    header .navbar a{
+        padding: 0 6px;
+        font-size: 14px;
+    }
+
+    header .navbar a.active::after{
+        content: "";
+        width: 70%;
+        height: 2px;
+        background: black;
+        position: absolute;
+        justify-content: space-between;
+        bottom: -4px;
+        left: 7px;
+    }
+
+    .banner img{
+        margin-top: 6.5vh;
+    }
+
+    .about-us.box-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 100px;
+        margin-right: 100px;
+        gap: 25px;
+        row-gap: 50px;
+        margin-bottom: 100px;
+    }
+
+    .about-us.box-container .box .image img{
+        margin-left: 40px;
+    }
+
+    .about-us.box-container .box{
+        border: 1px solid#cce7d0;
+        box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.05);
+        width: 45%;
+        background: white;
+    }
+
+    .about-us.box-container .box .image{
+        height: 200px;
+        width: 230px;
+        overflow: hidden;
+    }
+
+    .about-us.box-container .box .content h2{
+        font-size: 1.5rem;
+        color: black;
+        margin-bottom: 20px;
+    }
+    
+    .about-us.box-container .box .content h1{
+        font-size: 1.3rem;
+        color: black;
+        text-align: left;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+    
+    .about-us.box-container .box .content p{
+        font-size: 1.1rem;
+        color: rgba(0, 0, 0, 0.95);
+        text-align: left;
+        line-height: 13px;
+        text-transform: capitalize;
+    }
+
+    .footer{
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    
+    .social-media a{
+        font-size: 20px;
+    }
+
+    .footer-col ul li{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .bottom{
+        font-size: 10px;
+    }
+}
+
+/*phone*/
+@media (max-width: 480px) {
+
+    header .logo{
+        margin-right: 150px;
+        
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);  
+    }
+
+    header #toggle:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);  
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1px solid rgba(0,0,0,0.1);
+        display: block;
+    }
+
+    header .navbar a.active::after{
+        content: "";
+        width: 9%;
+        height: 2px;
+        background: black;
+        position: absolute;
+        justify-content: space-between;
+        bottom: 8px;
+        left: 12px;
+    }
+    
+    .banner img{
+        margin-top: 9vh;
+    }
+
+    .about-us .box-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+        row-gap: 100px;
+        margin-bottom: 90px;
+    }
+
+    .about-us.box-container .box .image img{
+        margin-left: 60px;
+    }
+
+    .about-us.box-container .box{
+        border: 1px solid#cce7d0;
+        box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.05);
+        width: 60%;
+        background: white;
+    }
+
+    .about-us.box-container .box .image{
+        height: 200px;
+        width: 230px;
+        overflow: hidden;
+    }
+
+    .about-us.box-container .box .content h2{
+        font-size: 1.5rem;
+        color: black;
+        margin-bottom: 20px;
+    }
+    
+    .about-us.box-container .box .content h1{
+        font-size: 1.3rem;
+        color: black;
+        text-align: left;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+    
+    .about-us.box-container .box .content p{
+        font-size: 1.1rem;
+        color: rgba(0, 0, 0, 0.95);
+        text-align: left;
+        line-height: 13px;
+        text-transform: capitalize;
+    }
+
+    h1{
+        font-size: 17px;
+        margin-top: 15px;
+    }
+
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .footer-col ul{
+        flex-direction: column;
+    }
+    
+    .footer-col ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .social-media a{
+        font-size: 13px;
+    } 
+}

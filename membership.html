@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - GoLitech</title>
+    <link rel="stylesheet" href="assets/css/membershipPage.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<body>
+
+    <!-- Header -->
+    <header>
+        <input type="checkbox" name="" id="toggle">
+        <label for="toggle" class="fa-solid fa-bars"></label>
+
+        <a href="#" class="logo">GoLitech</a>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Product</a>
+            <a class="active" href="membership.html">Membership</a>
+            <a href="about.html">About Us</a>
+            <a href="store.html">Our Store</a>               
+        </div>
+    </header>
+    
+    <form id="form-register">
+        <h1 id="title">
+            Join Membership
+        </h1>
+
+        <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text"
+            id="name">
+        </div>
+
+        <div class="form-field">
+            <label>Gender</label>
+            <div id="radio-group">
+                <div>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label for="email">Email</label>
+            <input type="text"
+            id="email">
+        </div>
+
+        <div class="form-field">
+            <label for="number">Phone Number</label>
+            <input type="text"
+            id="number">
+        </div>
+
+        <div class="form-field">
+            <label for="address">Address</label>
+            <textarea id="address" rows="8"></textarea>
+        </div>
+    
+
+        <button type="submit" id="regis-button">Register</button>
+    </form>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="store.html">Stores</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>&copy; GoLitech. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/validation.js"></script>
+</html>
